@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.entando.plugin.token.security.oauth2.CachedUserInfoTokenServices;
 import org.entando.plugin.token.security.oauth2.SimpleAuthoritiesExtractor;
 import org.entando.plugin.token.security.oauth2.SimplePrincipalExtractor;
+import org.springframework.security.core.token.TokenService;
 
 @Configuration
 public class OAuth2TokenServicesConfiguration {
@@ -32,6 +33,7 @@ public class OAuth2TokenServicesConfiguration {
         userInfoTokenServices.setAuthoritiesExtractor(authoritiesExtractor);
         return userInfoTokenServices;
     }
+
     @Bean
     public PrincipalExtractor principalExtractor() {
         return new SimplePrincipalExtractor(OAUTH2_PRINCIPAL_ATTRIBUTE);

@@ -133,7 +133,7 @@ security:
       client-id: internal
       client-secret: internal
     resource:
-      user-info-uri: http://localhost:9080/auth/realms/jhipster/protocol/openid-connect/userinfo
+        user-info-uri: http://localhost:8081/auth/realms/entando-development/protocol/openid-connect/userinfo
 
 server:
   servlet:

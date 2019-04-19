@@ -39,6 +39,7 @@ public class CacheConfiguration {
             cm.createCache(org.entando.plugin.token.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(org.entando.plugin.token.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(org.entando.plugin.token.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(org.entando.plugin.token.domain.Token.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
